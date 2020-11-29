@@ -1,0 +1,7 @@
+<h1>MOD 1</h1>
+<button #btn (click)="btn.show = !btn.show">action</button>
+
+<ng-container *ngIf="btn.show">
+    <common></common>
+    <ng-content></ng-content>
+</ng-container>
